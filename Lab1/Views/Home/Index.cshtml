@@ -1,0 +1,22 @@
+﻿@using Lab1.ViewModels;
+@{
+    Layout = "_Layout";
+}
+
+<h2>Cars Information</h2>
+@foreach (var carViewModel in Model.CarViewModels)
+{
+    <p>Car ID: @carViewModel.Car.Id, Model: @carViewModel.Car.Model, Age: @carViewModel.Car.AgeCar</p>
+}
+
+<h2>Users Information</h2>
+@foreach (var userViewModel in Model.UserViewModels)
+{
+    <p>User ID: @userViewModel.User.Id, Name: @userViewModel.User.Name, Phone: @userViewModel.User.Phone</p>
+}
+
+<h2>Parking Lots Information</h2>
+@foreach (var parkingLotViewModel in Model.ParkingLotViewModels)
+{
+    <p>Parking Lot ID: @parkingLotViewModel.ParkingLot.Id, Location: @parkingLotViewModel.ParkingLot.Location, Price: @parkingLotViewModel.ParkingLot.Price</p>
+}

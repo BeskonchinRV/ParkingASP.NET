@@ -1,0 +1,9 @@
+﻿@using Lab1.ViewModels;
+@model List<UserViewModel>
+@{
+    Layout = "_Layout";
+}
+@foreach (var userViewModel in Model)
+{
+    <p>User ID: @userViewModel.User.Id, Name: @userViewModel.User.Name, Phone: @userViewModel.User.Phone</p>
+}

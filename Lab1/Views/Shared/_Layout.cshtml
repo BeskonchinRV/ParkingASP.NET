@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - My Car Parking</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <h1>My Car Parking</h1>
+        <nav>
+            <ul>
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/Car">Cars</a></li>
+                <li><a href="/User">Users</a></li>
+                <li><a href="/ParkingLot">ParkingLots</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Car Parking</p>
+    </footer>
+</body>
+</html>

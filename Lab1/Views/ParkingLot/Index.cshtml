@@ -1,0 +1,9 @@
+﻿@using Lab1.ViewModels;
+@model List<ParkingLotViewModel>
+@{
+    Layout = "_Layout";
+}
+@foreach (var parkingLotViewModel in Model)
+{
+    <p>Parking Lot ID: @parkingLotViewModel.ParkingLot.Id, Location: @parkingLotViewModel.ParkingLot.Location, Price: @parkingLotViewModel.ParkingLot.Price</p>
+}

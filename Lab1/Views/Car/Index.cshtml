@@ -1,0 +1,9 @@
+﻿@using Lab1.ViewModels;
+@model List<CarViewModel>
+@{
+    Layout = "_Layout";
+}
+@foreach (var carViewModel in Model)
+{
+    <p>Car ID: @carViewModel.Car.Id, Model: @carViewModel.Car.Model, Age: @carViewModel.Car.AgeCar</p>
+}
